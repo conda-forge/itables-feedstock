@@ -16,11 +16,11 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - requests
   host:
     - pip
     - python >=3.6
+    - requests
+    - setuptools
   run:
     - ipython
     - pandas
