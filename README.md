@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@asford](https://github.com/asford/)
+* [@mwouts](https://github.com/mwouts/)
 
