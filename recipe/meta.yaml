@@ -1,5 +1,5 @@
 {% set name = "itables" %}
-{% set version = "1.4.1" %}
+{% set version = "1.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/itables-{{ version }}.tar.gz
-  sha256: 3b050e9e955669e4f6e3c260ce77709c6bdccabbd63ff723a2d6bb8a1c98ff65
+  sha256: 5e01cd1986b4f29f239c5e6d03e2ec912b956504dd96de7b7613a20794eaa6ad
 
 build:
   number: 0
