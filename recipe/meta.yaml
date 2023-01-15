@@ -18,13 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=2.7
     - requests
     - setuptools
   run:
     - ipython
     - pandas
-    - python >=3.6
+    - numpy
+    - python >=2.7
 
 test:
   imports:
