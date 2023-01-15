@@ -11,20 +11,21 @@ source:
   sha256: 9904bc0d995141ce0cf2178c0cc330105ca2ed11ac0a245f911d9c6362cb6c73
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=2.7
     - requests
     - setuptools
   run:
     - ipython
     - pandas
-    - python >=3.6
+    - numpy
+    - python >=2.7
 
 test:
   imports:
