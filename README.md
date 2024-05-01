@@ -7,7 +7,7 @@ Home: https://github.com/mwouts/itables
 
 Package license: MIT
 
-Summary: Interactive Tables in Jupyter
+Summary: Pandas and Polar DataFrames as interactive DataTables
 
 Current build status
 ====================
