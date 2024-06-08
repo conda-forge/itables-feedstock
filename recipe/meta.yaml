@@ -11,7 +11,7 @@ source:
   sha256: 7c013060d78041bddf7ee19db57ab4aff9f1e68333fc5cd03969c8c9a56e6691
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -39,24 +39,17 @@ test:
 
 about:
   home: https://github.com/mwouts/itables
-  doc_url: https://mwouts.github.io/itables/quick_start.html
-  summary: Pandas and Polar DataFrames as interactive DataTables
+  doc_url: https://mwouts.github.io/itables
+  summary: Pandas and Polars DataFrames as Interactive DataTables
   license: MIT
   license_file:
     - LICENSE
     - LICENSE_jquery.txt
     - LICENSE_datatables-net.txt
-  description: >-
+  description: |
     This packages changes how Pandas and Polars DataFrames are rendered in Jupyter Notebooks.
-    With `itables` you can display your tables as interactive [DataTables](https://datatables.net/)
+    With ITables you can display your tables as interactive [DataTables](https://datatables.net/)
     that you can sort, paginate, scroll or filter.
-
-    ITables is just about how tables are displayed. You can turn it on and off in just two lines,
-    with no other impact on your data workflow.
-
-    The `itables` package only depends on `numpy`, `pandas` and `IPython`
-    which you must already have if you work with Pandas in Jupyter (add `polars`, `pyarrow` if you
-    work with Polars DataFrames).
 
 extra:
   recipe-maintainers:
