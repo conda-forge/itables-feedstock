@@ -7,7 +7,14 @@ Home: https://github.com/mwouts/itables
 
 Package license: MIT
 
-Summary: Pandas and Polar DataFrames as interactive DataTables
+Summary: Pandas and Polars DataFrames as Interactive DataTables
+
+Documentation: https://mwouts.github.io/itables
+
+This packages changes how Pandas and Polars DataFrames are rendered in Jupyter Notebooks.
+With ITables you can display your tables as interactive [DataTables](https://datatables.net/)
+that you can sort, paginate, scroll or filter.
+
 
 Current build status
 ====================
