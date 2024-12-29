@@ -11,14 +11,14 @@ source:
   sha256: 6d2810fab5cc67260f69c9fa7c6930bd7a39f92aaff2264dc4e914eaa7a005e5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - nodejs
-    - python >=3.8
+    - python {{ python_min }}
     - python-build
     - hatch-jupyter-builder
     - hatchling
@@ -27,7 +27,7 @@ requirements:
     - ipython
     - pandas
     - numpy
-    - python >=3.7
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -36,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/mwouts/itables
