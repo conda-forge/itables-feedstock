@@ -21,8 +21,9 @@ requirements:
     - python {{ python_min }}
     - python-build
     - hatch-jupyter-builder
-    - hatchling
     - dash
+    - pyyaml
+    - hatchling
     - pip
   run:
     - ipython
