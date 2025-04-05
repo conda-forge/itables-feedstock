@@ -1,5 +1,5 @@
 {% set name = "itables" %}
-{% set version = "2.2.5" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/itables-{{ version }}.tar.gz
-  sha256: 838ed4783da0b6481b9062c362b8a331aa56f48d6c90e0f6dc76a0488a316049
+  git_rev: v{{ version }}
+  git_url: https://github.com/mwouts/itables.git
 
 build:
   number: 0
@@ -21,6 +21,8 @@ requirements:
     - python {{ python_min }}
     - python-build
     - hatch-jupyter-builder
+    - dash
+    - pyyaml
     - hatchling
     - pip
   run:
@@ -48,9 +50,10 @@ about:
     - LICENSE_jquery.txt
     - LICENSE_datatables-net.txt
   description: |
-    This packages changes how Pandas and Polars DataFrames are rendered in Jupyter Notebooks.
-    With ITables you can display your tables as interactive [DataTables](https://datatables.net/)
-    that you can sort, paginate, scroll or filter.
+    Render Pandas and Polars DataFrames as interactive [DataTables](https://datatables.net/)
+    that you can sort, paginate, scroll or filter. ITables works in Jupyter, 
+    VS Code, Google Colab, Quarto, and in many application frameworks like 
+    Shiny, Dash or Streamlit.
 
 extra:
   recipe-maintainers:
