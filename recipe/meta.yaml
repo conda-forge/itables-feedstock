@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/itables-{{ version }}.tar.gz
-  sha256: ce570e3f888e7baf5e9cb0416a2e1c981c09c49e81d2fb80e8bc574b169c250b
+  git_rev: v{{ version }}
+  git_url: https://github.com/mwouts/itables.git
 
 build:
   number: 0
