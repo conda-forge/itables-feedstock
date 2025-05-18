@@ -29,6 +29,8 @@ requirements:
     - ipython
     - pandas
     - numpy
+    - packaging
+    - typing-extensions
     - python >={{ python_min }}
 
 test:
