@@ -14,7 +14,7 @@ Documentation: https://mwouts.github.io/itables
 Render Pandas and Polars DataFrames as interactive [DataTables](https://datatables.net/)
 that you can sort, paginate, scroll or filter. ITables works in Jupyter,
 VS Code, Google Colab, Quarto, Marimo, and in many application frameworks like
-Dash, Panel, Shiny or Streamlit.
+Dash, Panel, Shiny, or Streamlit.
 
 
 Current build status
