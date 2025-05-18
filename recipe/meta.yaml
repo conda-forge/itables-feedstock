@@ -1,5 +1,5 @@
 {% set name = "itables" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 
 package:
@@ -29,6 +29,8 @@ requirements:
     - ipython
     - pandas
     - numpy
+    - packaging
+    - typing-extensions
     - python >={{ python_min }}
 
 test:
@@ -52,8 +54,8 @@ about:
   description: |
     Render Pandas and Polars DataFrames as interactive [DataTables](https://datatables.net/)
     that you can sort, paginate, scroll or filter. ITables works in Jupyter, 
-    VS Code, Google Colab, Quarto, and in many application frameworks like 
-    Shiny, Dash or Streamlit.
+    VS Code, Google Colab, Quarto, Marimo, and in many application frameworks like 
+    Dash, Panel, Shiny, or Streamlit.
 
 extra:
   recipe-maintainers:
