@@ -1,5 +1,5 @@
 {% set name = "itables" %}
-{% set version = "2.4.1" %}
+{% set version = "2.4.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mwouts/itables/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bb408b969ba5e86fbcf6b0b5248591537474cbcaa936d789cc2c546a5ea682c9
+  sha256: 6fa58a813e937bafaf7c0aa265a770d3dcfb58a55fe0b7d9e4175fdde78dab39
 
 build:
   number: 0
