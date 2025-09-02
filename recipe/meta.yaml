@@ -7,11 +7,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/mwouts/itables/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: befb0ae8ab6de86c2e725d981e4fde7db1d757eecc7d6e858080beedf45803e9
+  # url: https://github.com/mwouts/itables/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/mwouts/itables/archive/refs/tags/v2.5.2b.tar.gz
+  sha256: 5e8e3b975a7eff313ac003db8d89dc12b54132c52dbfb93575cc140cb25357fe
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
