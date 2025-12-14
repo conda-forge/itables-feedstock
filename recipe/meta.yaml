@@ -8,8 +8,8 @@ package:
 
 source:
   # url: https://github.com/mwouts/itables/archive/refs/tags/v{{ version }}.tar.gz
-  url: https://github.com/mwouts/itables/archive/refs/tags/v2.6.0.tar.gz
-  sha256: aba6f986bd5958b0902f60b34e34e49b520b0f0e5727f249412a827fe4c1451d
+  url: https://github.com/mwouts/itables/archive/refs/tags/v2.6.1.tar.gz
+  sha256: 002f89dcada974b2f304f17f8128bac9d40dff220c3491aa1d24fcf7b593d8ee
 
 build:
   number: 0
@@ -27,7 +27,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - typing-extensions  # to be removed in itables 2.6.1
     - python >={{ python_min }}
 
 test:
