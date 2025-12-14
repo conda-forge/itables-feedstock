@@ -12,7 +12,7 @@ source:
   sha256: aba6f986bd5958b0902f60b34e34e49b520b0f0e5727f249412a827fe4c1451d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -27,7 +27,7 @@ requirements:
     - hatchling
     - pip
   run:
-    - typing-extensions  # [py<311]
+    - typing-extensions  # to be removed in itables 2.6.1
     - python >={{ python_min }}
 
 test:
