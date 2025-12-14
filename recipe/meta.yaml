@@ -1,5 +1,5 @@
 {% set name = "itables" %}
-{% set version = "2.5.2" %}
+{% set version = "2.6.0" %}
 
 
 package:
@@ -8,8 +8,8 @@ package:
 
 source:
   # url: https://github.com/mwouts/itables/archive/refs/tags/v{{ version }}.tar.gz
-  url: https://github.com/mwouts/itables/archive/refs/tags/v2.5.2b.tar.gz
-  sha256: 5e8e3b975a7eff313ac003db8d89dc12b54132c52dbfb93575cc140cb25357fe
+  url: https://github.com/mwouts/itables/archive/refs/tags/v2.6.0.tar.gz
+  sha256: aba6f986bd5958b0902f60b34e34e49b520b0f0e5727f249412a827fe4c1451d
 
 build:
   number: 1
@@ -27,11 +27,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - ipython
-    - pandas
-    - numpy
-    - packaging
-    - typing-extensions
     - python >={{ python_min }}
 
 test:
@@ -46,7 +41,7 @@ test:
 about:
   home: https://github.com/mwouts/itables
   doc_url: https://mwouts.github.io/itables
-  summary: Pandas and Polars DataFrames as Interactive DataTables
+  summary: Python DataFrames as Interactive DataTables
   license: MIT
   license_file:
     - LICENSE
