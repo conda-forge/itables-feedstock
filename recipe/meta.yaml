@@ -27,6 +27,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - typing-extensions  # [py<311]
     - python >={{ python_min }}
 
 test:
@@ -34,6 +35,7 @@ test:
     - itables
   commands:
     - pip check
+    - python -c "import itables; print(itables.__version__)"
   requires:
     - pip
     - python {{ python_min }}
