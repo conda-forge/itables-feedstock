@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/mwouts/itables
-  doc_url: https://mwouts.github.io/itables
+  doc_url: https://itables.org
   summary: Python DataFrames as Interactive DataTables
   license: MIT
   license_file:
