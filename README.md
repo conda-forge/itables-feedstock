@@ -9,7 +9,7 @@ Package license: MIT
 
 Summary: Python DataFrames as Interactive DataTables
 
-Documentation: https://mwouts.github.io/itables
+Documentation: https://itables.org
 
 Render Pandas and Polars DataFrames as interactive [DataTables](https://datatables.net/)
 that you can sort, paginate, scroll or filter. ITables works in Jupyter,
